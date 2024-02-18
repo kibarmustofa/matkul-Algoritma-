@@ -25,13 +25,14 @@ public class P1_Prak3Array {
             System.out.print("Masukkan nilai angka untuk MK " + mataKuliah[i] + ": ");
             nilai[i] = sc.nextDouble();
         }
+        
         System.out.println("======================");
         System.out.println("\nHasil Konversi Nilai");
         System.out.println("======================");
         System.out.println("MK\t\t\t\tNilai Angka\tNilai Huruf\tBobot Nilai");
         double totalBobotNilai = 0;
         int totalSks = 0;
-        
+
         for (int i = 0; i < mataKuliah.length; i++) {
             String nilaiHuruf = konversiNilai(nilai[i]);
             totalBobotNilai += bobotNilai[i] * sks [i];

@@ -18,13 +18,14 @@ public class P1_tugas1 {
         };
 
         String[] hurufPlat = { "A", "B", "D", "E", "F", "G", "H", "L", "N", "T" };
-        
+
         System.out.println("-         KODE HURUF PLAT NOMOR        -");
         System.out.println("=========================================");
         System.out.print("| ");
         for (int i = 0; i < hurufPlat.length; i++) {
             System.out.print(hurufPlat[i] + " | ");
         }
+        
         System.out.println();
         System.out.println("=========================================");
         System.out.print("Masukkan Kode Huruf plat Kota: ");

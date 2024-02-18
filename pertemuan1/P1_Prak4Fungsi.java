@@ -4,7 +4,6 @@ public class P1_Prak4Fungsi {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int menu;
-        
         do{
             
             System.out.println("-      selamat datang      -");
