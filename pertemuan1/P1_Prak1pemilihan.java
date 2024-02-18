@@ -26,6 +26,7 @@ public class P1_Prak1pemilihan {
             System.out.println("Nilai tidak valid");
             return;
         }
+        
         System.out.println("==================================");
         System.out.println("==================================");
         rata = tugas * 0.2 + kuis * 0.2 + uts * 0.3 + uas * 0.4;

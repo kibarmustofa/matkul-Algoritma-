@@ -7,7 +7,6 @@ public class P1_tugas2  {
         System.out.println("Program Menghitung Rumus Fisika");
         System.out.println("================================");
 
-        // Memilih rumus yang akan dihitung
         System.out.println("Pilih rumus yang akan dihitung:");
         System.out.println("1. Kecepatan");
         System.out.println("2. Jarak");

@@ -7,7 +7,7 @@ public class P1_Prak3Array {
         String[] mataKuliah = {
             "Pancasila",
             "Konsep Teknologi Informasi",
-            "Critical Thinking dan Problem Solving",
+            "Critical Thinking dan Problem Solving ",
             "Matematika Dasar",
             "Bahasa Inggris",
             "Dasar Pemrograman",
@@ -31,6 +31,7 @@ public class P1_Prak3Array {
         System.out.println("MK\t\t\t\tNilai Angka\tNilai Huruf\tBobot Nilai");
         double totalBobotNilai = 0;
         int totalSks = 0;
+        
         for (int i = 0; i < mataKuliah.length; i++) {
             String nilaiHuruf = konversiNilai(nilai[i]);
             totalBobotNilai += bobotNilai[i] * sks [i];

@@ -4,6 +4,7 @@ public class P1_Prak4Fungsi {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int menu;
+        
         do{
             
             System.out.println("-      selamat datang      -");
@@ -53,8 +54,6 @@ public class P1_Prak4Fungsi {
                 System.out.print("pilih cabang toko: ");
                 int cabang = sc.nextInt();
 
-                
-                
                 System.out.println("| Toko            : RoyalGarden " + cabang + "\t\t\t\t\t|");
                 System.out.println("=========================================");
                 System.out.println(
@@ -93,7 +92,7 @@ public class P1_Prak4Fungsi {
     } while (menu != 0);
 }
 
-    static String[] taman = {
+    static String[] cabang = {
             "RoyalGarden 1",
             "RoyalGarden 2",
             "RoyalGarden 3",

@@ -16,12 +16,10 @@ public class P1_Prak2Perulangan {
             if (i == 6 || i == 10) {
                 continue;
             }
-            // Cetak angka ganjil dengan asterisk (*) dan angka genap sesuai bilangan aslinya
             System.out.print(i % 2 == 0 ? i + " " : "* ");
         }
     }
 
-    // Method untuk mengambil dua digit terakhir dari NIM
     public static int duaDigitAkhir(long nim) {
         return (int) (nim % 100);
     }
