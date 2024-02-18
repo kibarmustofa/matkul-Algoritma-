@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class P1_tugas1 {
     public static void main(String[] args ) {
         Scanner sc = new Scanner(System.in);
-       
         String[][] kota = {
             { "B", "A", "N", "T", "E", "N" },
             { "J", "A", "K", "A", "R", "T", "A" },

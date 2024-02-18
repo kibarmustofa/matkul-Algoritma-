@@ -1,8 +1,7 @@
 import java.util.Scanner;
 
 public class P1_Prak2Perulangan {
-  public static void main(String[] args) 
-  {
+  public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);    
         System.out.print("Input NIM: ");
         long nim = scanner.nextLong();

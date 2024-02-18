@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class P1_tugas2  {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
         System.out.println("Program Menghitung Rumus Fisika");
         System.out.println("================================");
         System.out.println("Pilih rumus yang akan dihitung:");

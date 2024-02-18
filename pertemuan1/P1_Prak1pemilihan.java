@@ -48,6 +48,7 @@ public class P1_Prak1pemilihan {
                 System.out.println("Nilai anda E");
             }
         }
+        
         System.out.println("==================================");
         System.out.println("==================================");
         if (rata > 50) {

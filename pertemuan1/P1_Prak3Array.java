@@ -2,7 +2,6 @@ import java.util.Scanner ;
 
 public class P1_Prak3Array {
     public static void main(String[] args ) {
-        
         Scanner sc = new Scanner(System.in);
         String[] mataKuliah = {
             "Pancasila",
