@@ -6,7 +6,6 @@ public class P1_Prak2Perulangan {
         System.out.print("Input NIM: ");
         long nim = scanner.nextLong();
         int n = duaDigitAkhir(nim);
-        
         if (n < 10) {
             n += 10;
         }

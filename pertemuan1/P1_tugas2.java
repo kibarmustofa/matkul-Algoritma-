@@ -29,7 +29,6 @@ public class P1_tugas2  {
 
     public static void hitungKecepatan() {
         Scanner sc = new Scanner(System.in);
-
         System.out.println("\nRumus Kecepatan");
         System.out.println("================");
         System.out.print("Masukkan jarak (s): ");
@@ -43,7 +42,6 @@ public class P1_tugas2  {
 
     public static void hitungJarak() {
         Scanner sc = new Scanner(System.in);
-
         System.out.println("\nRumus Jarak");
         System.out.println("============");
         System.out.print("Masukkan kecepatan (v): ");
@@ -57,7 +55,6 @@ public class P1_tugas2  {
 
     public static void hitungWaktu() {
         Scanner sc = new Scanner(System.in);
-
         System.out.println("\nRumus Waktu");
         System.out.println("============");
         System.out.print("Masukkan jarak (s): ");

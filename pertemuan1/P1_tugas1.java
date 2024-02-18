@@ -36,8 +36,7 @@ public class P1_tugas1 {
                 plat = i;
                 break;
             }
-        }
-        if (plat != -1) {
+        } if (plat != -1) {
             System.out.println("Plat: " + hurufPlat[plat]);
             System.out.print("Kota: ");
             for (int i = 0; i < kota[plat].length; i++) {

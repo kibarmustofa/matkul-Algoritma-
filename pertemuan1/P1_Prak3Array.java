@@ -13,7 +13,6 @@ public class P1_Prak3Array {
             "Praktikum Dasar Pemrograman",
             "Keselamatan dan Kesehatan Kerja"
         };
-
         double[] nilai = new double[mataKuliah.length];
         double[] bobotNilai = {3.0,4.0,3.0,4.0,4.0,2.5,2.5,4.0};
         int[] sks ={2,2,2,3,2,2,3,2};
