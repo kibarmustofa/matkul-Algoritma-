@@ -28,7 +28,7 @@ public class P1_Prak1pemilihan {
         System.out.println("==================================");
         System.out.println("==================================");
         rata = tugas * 0.2 + kuis * 0.2 + uts * 0.3 + uas * 0.4;
-        System.out.println("Nilai total anda adalah = " + rata);
+        System.out.printf("Nilai total anda adalah %.2f%n", rata);
 
         if (rata >= 0 && rata <= 100) {
             if (rata > 80) {
