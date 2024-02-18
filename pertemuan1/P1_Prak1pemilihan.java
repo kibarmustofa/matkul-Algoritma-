@@ -5,7 +5,6 @@ public class P1_Prak1pemilihan {
         Scanner sc = new Scanner(System.in);
         int tugas, kuis, uts, uas;
         double rata;
-        
         System.out.println("program hitung nilai akhir ");
         System.out.println("==================================");
         System.out.print("Masukkan nilai tugas anda \t: ");
