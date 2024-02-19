@@ -10,6 +10,16 @@ public class Buku14 {
         System.out.println("harga: Rp " + harga);
     }
 
+    public Buku14() {
+        
+    }
+    public Buku14(String jud, String PE, int hal, int stok, int har  ){
+        judul = jud; 
+        pengarang = PE;
+        halaman = hal;
+        this.stok = stok;
+        harga = har; 
+    }
     void terjual(int jml) {
         if (stok >= jml) {
             stok -= jml;
