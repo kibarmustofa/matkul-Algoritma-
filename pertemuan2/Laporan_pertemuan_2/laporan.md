@@ -142,6 +142,7 @@ berparameter dari class Buku!
 ## 2.4 Latihan Praktikum
 
 ### hasil kode praktikum 1:
+1. kode class Buku14:
 ```
 public class Buku14 {
     String judul, pengarang;
@@ -208,4 +209,119 @@ public class Buku14 {
 }
 
 ```
+2. kode main BukuMain14:
+```
+public class BukuMain14 {
+    public static void main(String[] args) {
+       Buku14 bk1 = new Buku14 ();
+       bk1.judul = "Today Ends Tomorrow Comes";
+       bk1.pengarang = "Denada Pratiwi";
+       bk1.halaman = 198;
+       bk1.stok = 13;
+       bk1.harga = 71000;
+
+       bk1.tampilInformasi();
+       bk1.terjual(5);
+       bk1.gantiHarga(60000);
+       bk1.tampilInformasi();
+       bk1.hitungHargaTotal(10);
+       bk1.hitungDiskon(0);
+       bk1.hitungHargaBayar(0, 0);
+
+
+       Buku14 bk2 = new Buku14("Self Reward", "Maheera Ayesha", 160, 29, 59000 );
+       bk2.terjual(11);
+       bk2.tampilInformasi();
+       
+       Buku14 BukuKibar = new Buku14("Sherlock Holmes", "Arthur Conan Doyle", 700, 30, 129000);
+       BukuKibar.tampilInformasi();
+
+    }
+}
+```
 ### Hasil Output:
+
+<img src="1_9.png">
+
+### hasil kode praktikum 2:
+1. kode class Dragon14:
+
+```
+public class Dragon14 {
+
+    int x, y, width, height;
+
+    void moveLeft() {
+        x -= 1;
+        if (x < 0) {
+            detectCollision(x, y);
+        }
+    }
+
+    void moveRight() {
+        x += 1;
+        if (x > width) {
+            detectCollision(x, y);
+        }
+    }
+
+    void moveUp() {
+        y -= 1;
+        if (y < 0) {
+            detectCollision(x, y);
+        }
+    }
+
+    void moveDown() {
+        y += 1;
+        if (y > height) {
+            detectCollision(x, y);
+        }
+    }
+
+    void printPosition() {
+        System.out.println("Your Dragon Position is (" + x + ", " + y + ")");
+    }
+
+    void detectCollision(int x, int y) {
+        System.out.println("GAME OVER");
+        System.out.println("Your Dragon Position is (" + x + ", " + y + ")");
+    }
+
+    public Dragon14(int horizontal, int vertical, int mapWidth, int mapHeight) {
+        x = horizontal;
+        y = vertical;
+        width = mapWidth;
+        height = mapHeight;
+    }
+}
+```
+2. kode main DragonMain14:
+
+```
+public class DragonMain14 {
+    public static void main(String[] args) {
+        Dragon14 dragon = new Dragon14(3, 5, 10, 10);
+
+        dragon.printPosition();
+
+        dragon.moveLeft();
+        dragon.printPosition();
+
+        dragon.moveUp();
+        dragon.printPosition();
+
+        for (int i = 0; i < 12; i++) {
+            dragon.moveRight();
+            dragon.printPosition();
+        }
+        for (int i = 0; i < 12; i++) {
+            dragon.moveDown();
+            dragon.printPosition();
+        }
+    }
+}
+```
+### Hasil Output:
+
+<img src="1_10.png">
