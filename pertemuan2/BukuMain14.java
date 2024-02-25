@@ -19,11 +19,7 @@ public class BukuMain14 {
        Buku14 bk2 = new Buku14("Self Reward", "Maheera Ayesha", 160, 29, 59000 );
        bk2.terjual(11);
        bk2.tampilInformasi();
-       bk2.tampilInformasi();
-       bk2.hitungHargaTotal(8);
-       bk2.hitungDiskon(0);
-       bk2.hitungHargaBayar(0, 0);
-
+       
        Buku14 BukuKibar = new Buku14("Sherlock Holmes", "Arthur Conan Doyle", 700, 30, 129000);
        BukuKibar.tampilInformasi();
 
