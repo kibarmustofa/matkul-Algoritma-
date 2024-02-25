@@ -3,11 +3,20 @@ public class Buku14 {
     int halaman, stok, harga;
 
     void tampilInformasi(){
-        System.out.println("judul: " + judul);
-        System.out.println("penagarang: " + pengarang);
-        System.out.println("jumlah halaman: " + halaman);
-        System.out.println("sisa stok " + stok);
-        System.out.println("harga: Rp " + harga);
+        System.out.println("Judul: " + judul);
+        System.out.println("Pengarang: " + pengarang);
+        System.out.println("Jumlah halaman: " + halaman);
+        System.out.println("Sisa stok: " + stok);
+        System.out.println("Harga: Rp " + harga);
+        
+        int hargaTotal = hitungHargaTotal(stok);
+        System.out.println("Harga Total: Rp " + hargaTotal);
+        
+        double diskon = hitungDiskon(hargaTotal);
+        System.out.println("Diskon: " + (diskon * 100) + "%");
+        
+        double hargaBayar = hitungHargaBayar(hargaTotal, diskon);
+        System.out.println("Harga Bayar: Rp " + hargaBayar);
     }
 
     public Buku14() {
@@ -29,7 +38,7 @@ public class Buku14 {
     }
     
     void restock(int jml){
-        harga+= jml;
+        stok += jml;
     }
     void gantiHarga(int hrg) {
         harga = hrg;
