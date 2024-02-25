@@ -10,5 +10,17 @@ public class BukuMain14 {
        bk1.terjual(5);
        bk1.gantiHarga(60000);
        bk1.tampilInformasi();
+       bk1.hitungHargaTotal(0);
+       bk1.hitungDiskon(0);
+       bk1.hitungHargaBayar(0, 0);
+
+
+       Buku14 bk2 = new Buku14("Self Reward", "Maheera Ayesha", 160, 29, 59000 );
+       bk2.terjual(11);
+       bk2.tampilInformasi();
+
+       Buku14 BukuKibar = new Buku14("Sherlock Holmes", "Arthur Conan Doyle", 700, 30, 129000);
+       BukuKibar.tampilInformasi();
+
     }
 }

@@ -34,5 +34,21 @@ public class Buku14 {
     void gantiHarga(int hrg) {
         harga = hrg;
     }
-    
+    int hitungHargaTotal(int jmlBukuTerjual) {
+        return harga * jmlBukuTerjual;
+    }
+
+    double hitungDiskon(int hargaTotal) {
+        if (hargaTotal > 150000) {
+            return 0.12; 
+        } else if (hargaTotal >= 75000 && hargaTotal <= 150000) {
+            return 0.05; 
+        } else {
+            return 0; 
+        }
+    }
+
+    double hitungHargaBayar(int hargaTotal, double diskon) {
+        return hargaTotal - (hargaTotal * diskon);
+    }
 }
