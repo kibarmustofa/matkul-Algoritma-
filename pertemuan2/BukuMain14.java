@@ -3,6 +3,7 @@ public class BukuMain14 {
        Buku14 bk1 = new Buku14 ();
        bk1.judul = "Today Ends Tomorrow Comes";
        bk1.pengarang = "Denada Pratiwi";
+       bk1.halaman = 198;
        bk1.stok = 13;
        bk1.harga = 71000;
 
