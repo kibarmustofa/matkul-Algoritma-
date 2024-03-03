@@ -3,9 +3,10 @@
 NAMA : Kibar Mustofa<br>
 KELAS : TI-1H<br>
 NIM : 2341720004<br>
-ABSEN : 12<br>
+ABSEN : 14<br>
 
 ## Hasil Output Praktikum Pemilihan
+
 
 Hasil Output dari Program hitung pemilihan:
 1. hasil: LULUS apabila nilai di antara nilai huruf <83 dan <=50.

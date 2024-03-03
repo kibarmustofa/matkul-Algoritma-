@@ -3,12 +3,9 @@
 NAMA : Kibar Mustofa<br>
 KELAS : TI-1H<br>
 NIM : 2341720004<br>
-ABSEN : 12<br>
+ABSEN : 14<br>
 
 ## 2.1 Percobaan 1: Deklarasi Class, Atribut dan Method
-
-
-- percobaan 1
 
 buat class buku
 setelah itu inisialisasi
