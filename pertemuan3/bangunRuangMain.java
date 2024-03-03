@@ -1,50 +1,55 @@
 import java.util.Scanner;
+
 public class bangunRuangMain {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Masukkan jumlah bangun : ");
+        int jumlahBangun = sc.nextInt();
        
-        Kerucut[] ker = new Kerucut[1];
-        for (int i = 0; i < ker.length; i++) {
-            System.out.println("Kerucut ke -" + i);
+        Kerucut[] ker = new Kerucut[jumlahBangun];
+        for (int j = 0; j < jumlahBangun; j++) {
+            System.out.println("Kerucut ke -" + (j + 1));
             System.out.print("Jari-jari kerucut: ");
             int r = sc.nextInt();
-            System.out.print("sisi Miring kerucut: ");
+            System.out.print("Sisi miring kerucut: ");
             int s = sc.nextInt();
-            ker[i] = new Kerucut(r, s);
+            ker[j] = new Kerucut(r, s);
         }
 
-        for (int i = 0; i < ker.length; i++) {
-            System.out.println("Luas Permukaan kerucut ke -" + i + " : " + ker[i].LuasPKerucut() + " cm2");
-            System.out.println("Volume kerucut ke -" + i + " : " + ker[i].VolumKerucut() + " cm3");
+        for (int j = 0; j < jumlahBangun; j++) {
+            System.out.println("Luas Permukaan kerucut ke -" + (j + 1) + " : " + ker[j].LuasPKerucut() + " cm2");
+            System.out.println("Volume kerucut ke -" + (j + 1) + " : " + ker[j].VolumKerucut() + " cm3");
         }
 
-        Limas[] lim = new Limas[1];
-        for (int i = 0; i < lim.length; i++) {
-            lim[i] = new Limas();
+        Limas[] lim = new Limas[jumlahBangun];
+        for (int j = 0; j < jumlahBangun; j++) {
+            lim[j] = new Limas();
 
-            System.out.println("Limas ke -" + i);
+            System.out.println("Limas ke -" + (j + 1));
             System.out.print("Panjang sisi alas limas: ");
-            lim[i].sisi = sc.nextInt();
+            lim[j].sisi = sc.nextInt();
             System.out.print("Tinggi limas: ");
-            lim[i].tinggi = sc.nextInt();
+            lim[j].tinggi = sc.nextInt();
         }
 
-        for (int i = 0; i < lim.length; i++) {
-            System.out.println("Luas Permukaan Limas ke -" + i + " : " + lim[i].LuasPLimas() + " cm2");
-            System.out.println("Volume Limas ke -" + i + " : " + lim[i].VolumLimas() + " cm3");
+        for (int j = 0; j < jumlahBangun; j++) {
+            System.out.println("Luas Permukaan Limas ke -" + (j + 1) + " : " + lim[j].LuasPLimas() + " cm2");
+            System.out.println("Volume Limas ke -" + (j + 1) + " : " + lim[j].VolumLimas() + " cm3");
         }
-        Bola[] ball = new Bola[1];
-        for (int i = 0; i < ball.length; i++) {
-            ball[i] = new Bola();
 
-            System.out.println("Bola ke -" + i);
+        Bola[] ball = new Bola[jumlahBangun];
+        for (int j = 0; j < jumlahBangun; j++) {
+            ball[j] = new Bola();
+
+            System.out.println("Bola ke -" + (j + 1));
             System.out.print("Panjang jari-jari: ");
-            ball[i].jariJari = sc.nextInt();
+            ball[j].jariJari = sc.nextInt();
         }
 
-        for (int i = 0; i < ball.length; i++) {
-            System.out.println("Luas Permukaan Bola ke -" + i + " : " + ball[i].LuasPBola() + " cm2");
-            System.out.println("Volume Bola ke -" + i + " : " + ball[i].VolumBola() + " cm3");
+        for (int j = 0; j < jumlahBangun; j++) {
+            System.out.println("Luas Permukaan Bola ke -" + (j + 1) + " : " + ball[j].LuasPBola() + " cm2");
+            System.out.println("Volume Bola ke -" + (j + 1) + " : " + ball[j].VolumBola() + " cm3");
         }
     }
 }
