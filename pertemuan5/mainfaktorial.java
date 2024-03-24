@@ -16,7 +16,7 @@ public class mainfaktorial {
             int iNilai = sc.nextInt();
             fk[i].nilai = iNilai; 
         }
-
+        
         System.out.println("HASIL-BRUTE FORCE");
         for (int i = 0; i < ijml; i++) {
             System.out.println("hasil penghitungan faktorial menggunakan Brute force adalah " + fk[i].faktorialbf(fk[i].nilai));
@@ -26,6 +26,6 @@ public class mainfaktorial {
         for (int i = 0; i < ijml; i++) {
             System.out.println("hasil penghitungan faktorial menggunakan Devide and Conquer adalah " + fk[i].faktorialdc(fk[i].nilai));
         }
-
+        sc.close();
     }
 }
