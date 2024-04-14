@@ -1,24 +1,22 @@
 package pertemuan7;
 public class buku14{
-    int kodeBuku;
-    String judulBuku;
-    int tahunTerbit;
-    String pengarang;
-    int stock;
+    int  tahunTerbit, stock;
+    String judulBuku, kodeBuku, pengarang;
 
-    public buku14 (int kodeBuku, String judulBuku, int tahunTerbit, String pengarang, int stock){
+    buku14 (String kodeBuku, int tahunTerbit, int stock, String judulBuku, String pengarang){
         this.kodeBuku = kodeBuku;
-        this.judulBuku = judulBuku;
         this.tahunTerbit = tahunTerbit;
-        this.pengarang = pengarang;
         this.stock = stock;
+        this.judulBuku = judulBuku;
+        this.pengarang = pengarang;
     }
-    
-    public void tampilDataBuku(){
-    System.out.println("==========================================================");
-    System.out.println("kode buku: "+kodeBuku);
-    System.out.println("judul buku: "+judulBuku);
-    System.out.println("pengarang: "+pengarang);
-    System.out.println("stock: "+stock);
+
+    void tampilDataBuku (){
+        System.out.println("===============================");
+        System.out.println("Kode Buku : "+kodeBuku);
+        System.out.println("Judu Buku : "+judulBuku);
+        System.out.println("Tahun Terbit : "+tahunTerbit);
+        System.out.println("Pengarang : "+pengarang);
+        System.out.println("Stock : "+stock);
     }
 }
