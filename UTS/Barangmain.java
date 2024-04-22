@@ -21,8 +21,10 @@ public class Barangmain {
             new Barang("pensil", 42)
         };
         Toko toko = new Toko(daftarBarang);
-        
+        System.out.println("Daftar barang sebelum pengurutan:");
         toko.cetakDaftarBarang();
-        toko.bubbleSort();
+        
+        System.out.println("\nDaftar barang setelah pengurutan:");
+        toko.cetakDaftarBarang(); 
     }
 }
