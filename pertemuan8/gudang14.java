@@ -37,10 +37,11 @@ public class gudang14 {
         if (!cekKosong()){
             barang14 delete = tumpukan[top];
             top--;
-            System.out.println("barang" +delete.nama+ "diambil dari gudang");
+            System.out.println("barang " +delete.nama+ " diambil dari gudang.");
+            System.out.println("kode unik dalam biner: "+ konversiDesimalkeBiner(delete.kode));
             return delete; 
         }else{
-            System.out.println("tumpukan baarang kosoong");
+            System.out.println("tumpukan barang kosong");
             return null;
         }
     }
@@ -58,10 +59,23 @@ public class gudang14 {
         if (!cekKosong()){
             System.out.println("rincian tumpukan barng di gudang");
             for (int i = top; i >= 0; i --){
-                System.out.printf("kode %d: %s (kategori %s)\n", tumpukan[i].kode, tumpukan[i].nama, tumpukan[i].kategori);
+                System.out.printf("kode %d: %s (kategori %s)\n ", tumpukan[i].kode, tumpukan[i].nama, tumpukan[i].kategori);
             }
         }else{
             System.out.println("tumpukan barang kosong.");
         } 
+    }
+    public String konversiDesimalkeBiner(int kode){
+        StackKonversi stack = new StackKonversi();
+        while (kode>0){
+            int sisa = kode % 2;
+            stack.push(sisa);
+            kode = kode /2;
+        }
+        String biner= new String();
+        while(!stack.cekKosong()){
+            biner+= stack.pop();
+        }
+        return biner;
     }
 }

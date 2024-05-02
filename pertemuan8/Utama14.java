@@ -11,13 +11,13 @@ public class Utama14 {
             System.out.println("2.ambil barang");
             System.out.println("3.tampilkan tumpukan barang");
             System.out.println("4.keluar");
-            System.out.println("pilih operasi: ");
+            System.out.print("pilih operasi: ");
             int pilihan = scanner.nextInt();
             scanner.nextLine();
 
             switch (pilihan) {
                 case 1:
-                    System.out.println("masukkan kode barang: ");
+                    System.out.print("masukkan kode barang: ");
                     int kode = scanner.nextInt();
                     scanner.nextLine();
                     System.out.print("Masukan nama barang: ");
