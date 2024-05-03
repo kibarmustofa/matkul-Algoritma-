@@ -9,8 +9,11 @@ public class Utama14 {
             System.out.println("\nMenu:");
             System.out.println("1.tambah barang");
             System.out.println("2.ambil barang");
-            System.out.println("3.tampilkan tumpukan barang");
-            System.out.println("4.keluar");
+            System.out.println("3.lihat barang terbawah");
+            System.out.println("4.lihat barang teratas");
+            System.out.println("5.tampilkan tumpukan barang");
+            System.out.println("6.cari barang");
+            System.out.println("7.keluar");
             System.out.print("pilih operasi: ");
             int pilihan = scanner.nextInt();
             scanner.nextLine();
@@ -27,20 +30,28 @@ public class Utama14 {
                     barang14 barangBaru = new barang14(kode, nama, kategori);
                     gudang.tambahBarang(barangBaru);
                     break;
-
                 case 2:
                     gudang.ambilBarang();
                     break;
-
                 case 3:
-                    gudang.tampilkanBarang();
+                    gudang.lihatBarangTerbawah();
                     break;
                 case 4:
-                    break;               
+                    gudang.lihatBarangTeratas();
+                    break;     
+                case 5:
+                    gudang.tampilkanBarang();
+                    break;
+                case 6:
+                    gudang.cariBarang(scanner);
+                    break;
+                case 7:
+                    System.exit(0);
+                    break;      
                 default:
                     System.out.println("Pilihan tidak valid. Silakan coba lagi.");
                     scanner.close();
-                }
+            }
         }
     }
 }
