@@ -1,4 +1,4 @@
-# laporan pertemuan 7 : Searching
+# laporan pertemuan 8 : Stack
 
 NAMA : Kibar Mustofa<br>
 KELAS : TI-1H<br>
