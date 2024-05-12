@@ -12,6 +12,17 @@ public class sslMain {
         singll.insertAfter(700, 999);
         singll.print();
         singll.insertAt(3, 833);
-        singll.print();    
+        singll.print();
+        System.out.println("data pada indeks ke-1="+ singll.getData(1));
+        System.out.println("data 3 berada pada indeks ke-"+ singll.indexOf(760));
+        
+        singll.remove(999);
+        singll.print();
+        singll.removeAt(0);
+        singll.print();
+        singll.removeFirst();
+        singll.print();
+        singll.removeLast();
+        singll.print();
     }
 }
