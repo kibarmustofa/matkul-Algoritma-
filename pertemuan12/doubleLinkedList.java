@@ -78,4 +78,81 @@ public class doubleLinkedList {
             System.out.println("linked list kosong");
         }
     }
+    // praktikum 2 menambhkan method remove, remove first, removelast
+    public void removeFirst() throws Exception{ 
+        if(isEmpty()){
+            throw new Exception("linked list masih kosong, tidak dapat dihapus ");
+        }else if (size == 1){
+            removeLast();
+        }else{
+            head = head.next;
+            head.prev = null;
+            size--;
+        }
+    }
+    public void removeLast() throws Exception{
+        if (isEmpty()){
+            throw new Exception("linked list masih kosong, tidak dapat dihapus ");
+        } else if(head.next == null){
+            head = null;
+            size--;
+            return;
+        }
+        node current = head;
+        while (current.next.next != null){
+            current = current.next;
+        }
+        current.next=null;
+        size--;
+    }
+    public void remove(int index) throws Exception{
+        if(isEmpty()|| index>= size){
+            throw new Exception("linked list masih kosong, tidak dapat dihapus ");
+        }else if (index ==  0 ){
+            removeFirst();
+        }else{
+            node current = head;
+            int i = 0;
+            while (i < index) {
+                current = current.next;
+                i++;
+            }
+            if (current.next == null){
+                current.prev.next=null;
+            }
+            else if (current.prev ==  null){
+                current = current.next;
+                current.prev = null;
+                head = current;
+            }
+            size--;
+        }
+    }
+    //praktikum 3 penambahan getFirst, getLast, dan get.
+    public int getFirst() throws Exception{
+        if (isEmpty()){
+            throw new Exception("linked list masih kosong, tidak dapat dihapus ");
+        }
+        return head.data;
+    }
+    public int getLast() throws Exception {
+        if (isEmpty()){
+            throw new Exception("linked list masih kosong, tidak dapat dihapus ");
+        }
+        node tmp = head;
+        while (tmp.next !=null){
+            tmp = tmp.next;
+        }
+        return tmp.data;
+    }
+    public int get(int index) throws Exception {
+        if (isEmpty() || index >= size){
+            throw new Exception("linked list masih kosong, tidak dapat dihapus ");
+        } 
+        node tmp = head;
+        for(int i = 0; i < index; i++){
+            tmp = tmp.next;
+        } 
+        return tmp.data;
+    }
 }
