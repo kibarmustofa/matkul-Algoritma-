@@ -147,17 +147,7 @@ public class quarterSLL {
         return fastest;
     }
 
-    void simulateQualification() {
-        System.out.println("Simulating Q1...");
-        printQualificationStandings("Q1", 5, 0);
-
-        System.out.println("Simulating Q2...");
-        printQualificationStandings("Q2", 5, 1);
-
-        System.out.println("Simulating Q3...");
-        printQualificationStandings("Q3", 5, 2);
-    }
-
+    
     void eliminateSlowestDrivers(int numberOfEliminations, int sessionIndex) {
         for (int i = 0; i < numberOfEliminations; i++) {
             if (head == null) return;
@@ -179,15 +169,26 @@ public class quarterSLL {
             }
         }
     }
-    void printQualificationStandings(String session, int numberOfPlayers, int sessionIndex) {
-      
-        eliminateSlowestDrivers(head == null ? 0 : Math.max(0, head.team.getDriverCount() - numberOfPlayers), sessionIndex);
-
-        sortTeamsByLapTimes(sessionIndex);
-
-        System.out.println("\nQualification Standings - " + session + ":");
-        printTeamsByLapTimes(sessionIndex);
+    public void simulateQualification() {
+        System.out.println("HASIL KUALIFIKASI Q1");
+        simulateSession("Q1", 5);
+    
+        System.out.println("\nHASIL KUALIFIKASI Q2");
+        simulateSession("Q2", 5);
+    
+        System.out.println("\nHASIL KUALIFIKASI Q3");
+        simulateSession("Q3", 0);
     }
+    
+    private void simulateSession(String session, int eliminationLimit) {
+        int sessionIndex = session.equals("Q1") ? 0 : (session.equals("Q2") ? 1 : 2);
+        eliminateSlowestDrivers(sessionIndex, eliminationLimit); 
+        sortTeamsByLapTimes(sessionIndex);
+        printQualificationStandings(session, sessionIndex, eliminationLimit);
+    }
+    
+    p
+    
     void printTeamsByLapTimes(int sessionIndex) {
         Node temp = head;
         int position = 1;
@@ -195,12 +196,12 @@ public class quarterSLL {
             team team = temp.team;
             System.out.printf("POS %d: %s\n", position, team.getTeamName());
             System.out.println("\tDriver 1: " + team.getDriver1().getName());
-            System.out.println("\tLap Times Driver 1:");
+            System.out.println("\tLap Times driver 1:");
             for (int i = 0; i <= sessionIndex; i++) {
                 System.out.printf("\t\tSession %d: %.3f\n", i+1, team.getDriver1().getLapTime(i));
             }
             System.out.println("\tDriver 2: " + team.getDriver2().getName());
-            System.out.println("\tLap Times Driver 2:");
+            System.out.println("\tLap Times driver 2:");
             for (int i = 0; i <= sessionIndex; i++) {
                 System.out.printf("\t\tSession %d: %.3f\n", i+1, team.getDriver2().getLapTime(i));
             }
