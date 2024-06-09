@@ -17,7 +17,7 @@ public class queue {
     int size;
     int max;
 
-    public queue(int n) {           //KONSTRUKTOR
+    public queue(int n) {           //
         max = n;
         data = new int [max];
         size = 0;

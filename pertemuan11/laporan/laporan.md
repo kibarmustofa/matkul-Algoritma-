@@ -1,4 +1,4 @@
-# laporan pertemuan 10 : Queue
+# laporan pertemuan 11 : single linked list
 
 NAMA : Kibar Mustofa<br>
 KELAS : TI-1H<br>

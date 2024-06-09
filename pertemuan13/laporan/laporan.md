@@ -1,4 +1,4 @@
-# laporan pertemuan 10 : Queue
+# laporan pertemuan 13: Binary tree
 
 NAMA : Kibar Mustofa<br>
 KELAS : TI-1H<br>
