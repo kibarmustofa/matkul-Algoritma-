@@ -67,4 +67,25 @@ public class Graph14 {
         }
         System.out.println("");
     }
+    public boolean isPath(int start, int end) {
+        return dfs (start, end, new boolean[vertex]);
+    }
+
+    private  boolean dfs(int current, int target, boolean[] visited) {
+        if (current == target) {
+            return true;
+        }
+
+        visited[current] = true;
+        Node14 tmp = list[current].head;
+
+        while (tmp != null) {
+            if (!visited[tmp.data] && dfs(tmp.data, target, visited)) {
+                return true;
+            }
+            tmp = tmp.next;
+        }
+
+        return false;
+    }
 } 
